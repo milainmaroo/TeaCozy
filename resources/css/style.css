@@ -5,12 +5,13 @@ html {
 header {
   display: flex;
   text-align: center;
+  position: fixed;
+  z-index: 1;
   width: 100%;
   height: 69px;
   font-family: Helvetica;
   font-size: 22px;
   background-color: black;
-  opacity: 0.9;
   border-bottom: 1px solid seashell;
 }
 
@@ -25,7 +26,7 @@ nav span {
 
 .logo {
   display: flex;
-  text-align: center;
+  align-items: center;
   flex-grow: 1;
 }
 
@@ -43,10 +44,17 @@ header img {
 }
 
 .first-column .image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   width: 1200px;
   height: 700px;
   margin: 0 auto;
+}
+
+.first-column .main-content {
+  width: 1200px;
 }
 
 .second-column .image-content img {
@@ -62,7 +70,11 @@ header img {
  .second-column {
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid white;
+/*  border: 1px solid white; */
+}
+
+.menu h4 {
+  margin-top: 10px;
 }
 
 .third-column .main-content {
